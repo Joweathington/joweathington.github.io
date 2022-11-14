@@ -16,7 +16,7 @@
 <body>
     <header class="primary">
         <nav class="navbar bg-light">
-            <div class="container">
+            <div class="container text-muted border-bottom">
               <a class="navbar-brand" href="#">
                 <img src="/docs/5.2/assets/brand/bootstrap-logo.svg" alt="Bootstrap" width="30" height="24"></a>
                 <ul class="nav justify-content-end">
@@ -35,56 +35,62 @@
     </header>
 
     <div class="container intro">
-        <div class="row">
+        <div class="row" >
             <div class="col-md-8">
             <h1>Hey, I'm Josephine.</h1>
-        <p>I'm a designer and am currently studying at the University of Arkansas at 
-        Little Rock (UALR). I'll be graduating this December 2022 with a 
-        Bachelors of Arts Web Design & Development and Information 
-        Technology Minor.
-        </p>
-        <p>I am passionate about UX design and about exploring ways of applying art as a tool for visual communication.</p>
-        <p>Here is my <a href="assets/documents/resume.pdf" target="blank">resume</a> & <a href="assets/documents/cover-letter.pdf" 
-        target="blank">cover letter</a>.</p>
-    <h2>COURSES & EXPERIENCE</h2>
-    <dl>
-        <dt>COURSES</dt>
-        <dd>Google UX Design Certification // Expected May 2023</dd>
-        <dd>Mobile Web Development IFSC 3342</dd>
-    </dl>
-    <dl>
-        <dt>CARELINK // 2013 - 2019</dt>
-        <dd>Human Resource 2015 - 2019 // Receptionist 2013 - 2015</dd>
-        <dd>Anticipated people's needs & converted those to beneficial 
-            actions for the company & employees.</dd>
-    </dl>
-    <h2>SKILLS</h2>
-    <dl>
-        <dt>WEB DEVELOPMENT</dt>
-        <dd>HTML, CSS, PHP, JavaScript, WordPress, Bootstrap</dd>
-    </dl>
-    <dl>
-        <dt>ADOBE</dt>
-        <dd>.xd .ai .ae .indd .psd .pr        </dd>
-    </dl>
-    <dl>
-        <dt>COLLABORATION TOOLS</dt>
-        <dd>Figma, Trello, Google Workspace</dd>
-    </dl>
-</div>
+                <p>I'm a designer and am currently studying at the University of Arkansas at 
+                Little Rock (UALR). I'll be graduating this December 2022 with a 
+                Bachelors of Arts Web Design & Development and Information 
+                Technology Minor.</p>
+                <p>I am passionate about UX design and about exploring ways of applying art as a tool for visual communication.</p>
+                <p>Here is my <a href="assets/documents/resume.pdf" target="blank">resume</a> & <a href="assets/documents/cover-letter.pdf" 
+                    target="blank">cover letter</a>.</p>
+                <div class="row">
+                    <div class="col-md">
+                        <h2>SKILLS</h2>
+                            <dl>
+                        <dt>WEB DEVELOPMENT</dt>
+                        <dd>HTML, CSS, PHP, JavaScript, WordPress, Bootstrap</dd>
+                            </dl>
+                            <dl>
+                        <dt>ADOBE</dt>
+                        <dd>.xd .ai .ae .indd .psd .pr        </dd>
+                            </dl>
+                            <dl>
+                        <dt>COLLABORATION TOOLS</dt>
+                        <dd>Figma, Trello, Google Workspace</dd>
+                            </dl>
+                    </div>
+                    <div class="col-md">  
+                    <h2>COURSES & EXPERIENCE</h2>
+                        <dl>
+                    <dt>COURSES</dt>
+                    <dd>Google UX Design Certification // Expected May 2023</dd>
+                    <dd>Mobile Web Development IFSC 3342</dd>
+                        </dl>
+                        <dl>
+                    <dt>CARELINK // 2013 - 2019</dt>
+                    <dd>Human Resource 2015 - 2019 // Receptionist 2013 - 2015</dd>
+                    <dd>Anticipated people's needs & converted those to beneficial actions for the company & employees.</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
     <div class="col-6 col-md-4"><img src="assets/images/temporary-portrait.jpg" alt="portrait"/> </div>  
 </div>
-<footer>
-    <div class="copyright">
-       &copy JAW 2022
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+    <span class="mb-3 mb-md-0 text-muted">&copy; JAW</span>
+    <!--brand logo here-->
     </div>
-    <div class="location">
-        Living in Arkansas & loving it; so I will not relocate.
-    </div>
-    <div class="contact">
-       <ul><li>EMAIL</li><li>LINKEDIN</li><li>INSTAGRAM</li></ul>
-    </div>
-</footer>
+    <p class="col-md-4 mb-0 text-muted">Living in Arkansas & loving it // Not seeking to relocate</p>
+
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="ms-3"><a class="text-muted" href="#">EMAIL</a></li>
+      <li class="ms-3"><a class="text-muted" href="#">LINKEDIN</a></li>
+      <li class="ms-3"><a class="text-muted" href="#">INSTAGRAM</a></li>
+    </ul>
+  </footer>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
 </body>
