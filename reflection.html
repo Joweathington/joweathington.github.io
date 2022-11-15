@@ -14,22 +14,33 @@
 <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-   <header class="primary">
-      <div class="navigation">
-          <div class="brand">JAW</div>
-          <nav class="menu">
-              <ul>
-                  <li><a href="projects.html">PROJECTS</a></li>
-                  <li><a href="index.html">INTRO</a></li>
-              </ul>
-          </nav>
-          </div>
-          <div class="author">Josephine Aaron Weathington</div>
-      </header>
+    <header class="primary">
+        <nav class="navbar bg-light">
+            <div class="container text-muted border-bottom">
+              <a class="navbar-brand" href="#">
+                <img src="/docs/5.2/assets/brand/bootstrap-logo.svg" alt="Bootstrap" width="30" height="24"></a>
+                <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link" href="projects.html">PROJECTS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">INTRO</a>
+                </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container author">
+        Josephine Aaron Weathington
+        </div>
+    </header>
       <div class="container">
         <!--Adobe after effects full width-->
-<div class="wrap">
-<h1>IFSC 4610: PROJECT DEVELOPMENT & PORTFOLIO</h1>
+        <div class="embed-responsive embed-responsive-21by9">
+            <iframe class="embed-responsive-item" src="https://docs.google.com/presentation/d/e/2PACX-1vTwwGlnpfcX0HUlyvGpl4fTdNMWj3iM1tFGHHciqsgpWmkTzToPhNL50O7YfngGfBrJXJI-EOF89i3O/embed?start=false&loop=false&delayms=3000"  frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        </div>
+        <div class="row">
+            <div class="col-md">
+            <h1>IFSC 4610: PROJECT DEVELOPMENT & PORTFOLIO</h1>
 <p>A reflection on my Capstone Project - the development of the University District website.</p>
 <dl>
     <dt>PROJECT DESCRIPTION</dt>
@@ -49,10 +60,14 @@
         responsive design and accessibility.  Finally, we presented our final product to our client and class. To view our design 
         process, check out my team’s Google Slides presentation on <em>page 5</em>.</dd>
 </dl>
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTwwGlnpfcX0HUlyvGpl4fTdNMWj3iM1tFGHHciqsgpWmkTzToPhNL50O7YfngGfBrJXJI-EOF89i3O/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 </div>
+<div class="col-md">
+<p>Animation Here</p>
+</div>
+</div>
+
 <!--SECTION & ARTICLES-->
-<div class="wrap">
+<section class="reflection">
     <h1>REFLECTION</h1>
     <dl>
         <dt>My most challenging moments and what made them so...</dt>
@@ -78,15 +93,19 @@
             For a visual of growing into freedom, check out my animation below, <em>Watch Me Grow</em>.
             </dd>
     </dl>
-</div>
+</section>
 <!--ANIMATION VIDEO-->
-<footer>
-    <div class="copyright">
-       &copy JAW 2022
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <span class="mb-3 mb-md-0 text-muted">&copy; JAW</span>
+    <!--brand logo here-->
     </div>
-    <div class="contact">
-       <ul><li>EMAIL</li><li>LINKEDIN</li><li>INSTAGRAM</li></ul>
-    </div>
+
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="ms-3"><a class="text-muted" href="#">EMAIL</a></li>
+      <li class="ms-3"><a class="text-muted" href="#">LINKEDIN</a></li>
+      <li class="ms-3"><a class="text-muted" href="#">INSTAGRAM</a></li>
+    </ul>
 </footer>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
