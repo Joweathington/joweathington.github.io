@@ -25,4 +25,12 @@ img{
   width: 100%;
   height: 100%;
 }
+
+.screen-reader-only {
+  position: absolute;
+  width: 1px;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  white-space: nowrap;
+}
 /*=== GLOBAL ===*/
