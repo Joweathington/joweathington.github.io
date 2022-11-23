@@ -105,12 +105,12 @@ article{
   padding: 3.3rem;
 }
 
-dl{
+.reflection dl{
   padding-top: 2rem;
  }
 
 
-dd{
+.reflection dd{
   padding-bottom: 2rem;
 }
 
@@ -124,4 +124,19 @@ dd{
 .reflection .wrap p{
     font-size: .85rem;
     padding-bottom: 3.3rem;
+}
+
+.embed-responsive {
+  position: relative;
+  width:100%;
+  height: 0;
+  padding-top: 56.25%;
+}
+
+.youtube{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
