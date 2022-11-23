@@ -73,7 +73,9 @@ article{
   padding-bottom:3.3rem;
 }
 
-
+q{
+  font-style: italic;
+}
 
 /*===ADDITIONAL===*/
 .database img,
