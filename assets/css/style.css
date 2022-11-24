@@ -110,13 +110,33 @@ q{
 }
 
 
-
 /*===INTRO PAGE===*/
 .about,
 .about-skills{
   padding-top: 3.3rem;
 }
 
+
+/*===PROJECTS===*/
+.inner a:link img,
+.inner a:visited img{
+  background: rgba(0,0,0,0,);
+}
+
+
+a:hover .hover,
+a:active .hover{
+  background-image:url(/assets/images/reflection-red.png);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+a:hover .inner,
+a:hover .inner{
+  opacity: 0;
+  transition:all .6s ease-out;
+}
 
 
 
