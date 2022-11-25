@@ -37,6 +37,7 @@ img{
 /*=== GLOBAL ===*/
 
 body{
+  font-family: 'futura-pt', sans-serif;
   background-color: rgb(248, 249, 250);
   margin-bottom: 60px; /* Margin bottom by footer height */
 }
@@ -120,6 +121,10 @@ q{
 /*===PROJECTS===*/
 .inner img {
   opacity: 0.6;
+}
+
+svg{
+  padding: 1rem;
 }
 
 svg:hover{
