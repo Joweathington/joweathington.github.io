@@ -118,23 +118,15 @@ q{
 
 
 /*===PROJECTS===*/
-.inner a:link img,
-.inner a:visited img{
-  background: rgba(0,0,0,0,);
+.inner img {
+  opacity: 0.6;
 }
 
 
-.inner:hover,
-.inner:active{
-  background-image:url(/assets/images/reflection-red.png);
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-}
 
-.hover-img:hover,
-.hover-img:hover{
-  opacity: 0;
+.inner img:hover,
+.inner img:hover{
+  opacity: 1;
   transition: all .6s ease-out;
 }
 
