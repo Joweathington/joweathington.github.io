@@ -40,6 +40,7 @@ body{
   font-family: 'futura-pt', sans-serif;
   background-color: rgb(248, 249, 250);
   margin-bottom: 60px; /* Margin bottom by footer height */
+  font-size: 1.2em;
 }
 
 li{
@@ -142,10 +143,6 @@ svg:hover{
 
 
 /*===RELECTION PAGE===*/
-.reflection{
-  font-family:'Zen Kaku Gothic Antique', sans-serif;
-  font-weight: 500;
-}
 
 .growth{
   background-color: pink;
