@@ -132,10 +132,10 @@ q{
   background-repeat: no-repeat;
 }
 
-a:hover .hover-img,
-a:hover .hover-img{
+.hover-img:hover,
+.hover-img:hover{
   opacity: 0;
-  transition:all .6s ease-out;
+  transition: all .6s ease-out;
 }
 
 
