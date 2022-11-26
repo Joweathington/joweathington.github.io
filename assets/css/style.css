@@ -43,8 +43,13 @@ body{
   font-size: 1.2em;
 }
 
+
+a{
+  text-decoration: none;
+}
+
 li{
-  list-style: none;
+  list-style: none !important;
 }
 
 ul{
@@ -53,14 +58,14 @@ ul{
 
 
 h1:not(.intro h1){
-  font-size: 1.2rem;
+  font-size: 1.8rem;
 } 
 
 
 .author{
   padding-top: 0;
   line-height: .8;
-  font-size: 0.83rem;
+  font-size: 0.9rem;
 }
 
 
@@ -70,13 +75,16 @@ header nav ul li{
 
 header nav li a:link, 
 header nav li a:visited{
-  font-family: 'futura-pt', sans-serif;
   color: #6c757d;
 }
 
 
-header nav li a:hover, header nav li a:active{
-  transition: 2s;
+header nav li a:hover, 
+header nav li a:active,
+footer li a:hover,
+footer li a:active{
+  transition: .8s;
+  font-weight: 700;
   color: #d11406 !important;
 }
 
@@ -108,9 +116,12 @@ q{
 
 .jaw-brand{
   width: 70px;
-  height: 70px;
+  height: auto;
 }
 
+.wrap{
+  padding-top: 3.33rem;
+}
 
 /*===INTRO PAGE===*/
 .about,
@@ -119,14 +130,35 @@ q{
 }
 
 
+.intro h1{
+  font-size: 3rem;
+}
+
+
+
 /*===PROJECTS===*/
 .inner img {
   opacity: 0.6;
 }
 
+
+.projects section {
+  padding: 2.3rem 0;
+}
+
+
+
+.projects section:not(.writing-skills) {
+  border-bottom: dotted 1px #6c757d;
+}
+
+
+
 svg{
   padding: 1rem;
 }
+
+
 
 svg:hover{
   fill: #d11406;
