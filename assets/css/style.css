@@ -197,7 +197,6 @@ svg:hover{
 /*===RELECTION PAGE===*/
 
 .growth{
-  background-color: pink;
   padding: 3.3rem;
 }
 
@@ -221,6 +220,8 @@ svg:hover{
     font-size: .85rem;
     padding-bottom: 3.3rem;
 }
+
+
 
 .embed-responsive {
   position: relative;
