@@ -143,6 +143,29 @@ q{
 }
 
 
+.fade-in-image { animation: fadeIn 5s; }
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.box{
+  transition: opacity 0.8s;
+}
+
+.box.tag{
+  opacity: 0;
+}
+
+.box.active{
+  opacity: 1;
+}
+
+.loader{
+  text-align: center;
+}
+
 /*===INTRO PAGE===*/
 .about,
 .about-skills{
