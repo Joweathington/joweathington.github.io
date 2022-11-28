@@ -219,7 +219,7 @@ svg:hover{
 
 /*===RELECTION PAGE===*/
 
-.growth{
+.reflect{
   padding: 3.3rem;
 }
 
@@ -245,6 +245,9 @@ svg:hover{
 }
 
 
+.growth h2{
+  font-size: 5rem;
+}
 
 .embed-responsive {
   position: relative;
