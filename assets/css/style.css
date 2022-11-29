@@ -163,18 +163,27 @@ q{
   -ms-animation: fadeIn 5s;
 }
 
+
 @keyframes fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
 
+
+
 .box{
   transition: opacity 3s;
+  -webkit-transition: opacity 3s;
+  -moz-transition: opacity 3s;
+  -o-transition: opacity 3s;
+  -ms-transition: opacity 3s;
 }
+
 
 .box.tag{
   opacity: 0;
 }
+
 
 .box.active{
   opacity: 1;
