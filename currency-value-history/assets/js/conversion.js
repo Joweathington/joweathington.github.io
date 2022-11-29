@@ -10,7 +10,7 @@ async function GetStock() {
     // If all of the form elements are valid, the get the form values
     if (form.valid()) {
         
-        var apiKey = "Kc5Ts5gGr0HxtlaWdEaUzmAoj_UFeamz"
+        var apiKey = "iKgRiCkO2Yx3vF8xHcU3XtzxG2FK1Kz8"
         var FromDate = document.getElementById("FromDate").value;
         var ToDate = document.getElementById("ToDate").value;
         var baseCurrency = document.getElementById("baseCurrency").value;
