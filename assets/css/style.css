@@ -156,8 +156,8 @@ q{
 
 
 footer li{
+  font-family: ;
   letter-spacing: 0.125rem;
-  font-weight: 300 !important;
 }
 
 .fade-in-image { animation: fadeIn 4s; }
