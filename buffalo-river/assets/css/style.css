@@ -1,0 +1,1485 @@
+
+/*Fonts:
+    font-family: tablet-gothic, sans-serif;
+    font-family: spade, sans-serif;
+    font-family: campaign-slab, serif;
+
+    
+*/
+
+
+/*Color Scheme
+    #CFD5D5 - grey    - body
+    #425D68 - drkBlue - links
+    #3591AF - lgtBue  - background .info, carousel buttons
+    #E8C517 - yellow  - aside font
+    #2C7366 - green   - background
+    #BF382C - red
+*/
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  font-size: 100%;
+}
+
+
+/* ---------------Utility Styles----------------- */
+
+.container{
+    margin: 0 auto;
+}
+
+
+ul{
+  list-style: none;
+}
+
+
+a{
+  text-decoration: none;
+}
+
+
+
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+
+/* ---------------Responsive Images----------------- */
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+/* ---------------Global Styles----------------- */
+
+body{
+  background-color: #FFF;
+  font-size: 1em;
+  margin: 0;
+  font-family: tablet-gothic, sans-serif;
+}
+
+.grid{
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.184 20c.357-.13.72-.264 1.088-.402l1.768-.661C33.64 15.347 39.647 14 50 14c10.271 0 15.362 1.222 24.629 4.928.955.383 1.869.74 2.75 1.072h6.225c-2.51-.73-5.139-1.691-8.233-2.928C65.888 13.278 60.562 12 50 12c-10.626 0-16.855 1.397-26.66 5.063l-1.767.662c-2.475.923-4.66 1.674-6.724 2.275h6.335zm0-20C13.258 2.892 8.077 4 0 4V2c5.744 0 9.951-.574 14.85-2h6.334zM77.38 0C85.239 2.966 90.502 4 100 4V2c-6.842 0-11.386-.542-16.396-2h-6.225zM0 14c8.44 0 13.718-1.21 22.272-4.402l1.768-.661C33.64 5.347 39.647 4 50 4c10.271 0 15.362 1.222 24.629 4.928C84.112 12.722 89.438 14 100 14v-2c-10.271 0-15.362-1.222-24.629-4.928C65.888 3.278 60.562 2 50 2 39.374 2 33.145 3.397 23.34 7.063l-1.767.662C13.223 10.84 8.163 12 0 12v2z' fill='%235a585d' fill-opacity='0.07' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+h1{
+  font-size: 2em;
+  font-family: campaign-slab, serif; 
+  font-weight: 500;
+}
+
+
+
+h2{
+  font-size: 1.7em;
+  font-family: campaign-slab, serif; 
+  font-weight: 500;
+}
+
+
+h3{
+  font-size: 1.5em;
+  font-family: campaign-slab, serif; 
+  font-weight: 500;
+}
+
+
+
+
+.articles .post:not(
+  #canoeing,
+  #lodging,
+  #activities,
+  .about
+  ),
+.info,
+.articles header,
+.hamburger,
+footer div,
+.river-container,
+aside .table-wrap,
+.content{
+  margin: auto 10px;
+}
+
+
+.wrap{
+  margin-top: 20px;
+}
+
+
+.articles,
+footer,
+.footer-container,
+.brand,
+.contact,
+.additional-info,
+.chart-container,
+.post{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+footer{
+  background-color: #1b252a;
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.184 20c.357-.13.72-.264 1.088-.402l1.768-.661C33.64 15.347 39.647 14 50 14c10.271 0 15.362 1.222 24.629 4.928.955.383 1.869.74 2.75 1.072h6.225c-2.51-.73-5.139-1.691-8.233-2.928C65.888 13.278 60.562 12 50 12c-10.626 0-16.855 1.397-26.66 5.063l-1.767.662c-2.475.923-4.66 1.674-6.724 2.275h6.335zm0-20C13.258 2.892 8.077 4 0 4V2c5.744 0 9.951-.574 14.85-2h6.334zM77.38 0C85.239 2.966 90.502 4 100 4V2c-6.842 0-11.386-.542-16.396-2h-6.225zM0 14c8.44 0 13.718-1.21 22.272-4.402l1.768-.661C33.64 5.347 39.647 4 50 4c10.271 0 15.362 1.222 24.629 4.928C84.112 12.722 89.438 14 100 14v-2c-10.271 0-15.362-1.222-24.629-4.928C65.888 3.278 60.562 2 50 2 39.374 2 33.145 3.397 23.34 7.063l-1.767.662C13.223 10.84 8.163 12 0 12v2z' fill='%23f2f2f2' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");  
+  font-size: .75em;
+  color: #FFF;
+}
+
+
+/*--HEADER.PRIMARY-BANNERS---*/
+
+header.primary{
+ height: 70vh;
+ display: flex;
+ justify-content: space-between;
+}
+
+
+header.home-hero{
+ background:url("../img/DSC02499.jpg"); 
+ background-size:cover;
+}
+
+
+header.plan-hero{
+ background:url("../img/DSC09184.jpg"); 
+ background-size:cover;
+}
+
+
+header.canoe-hero{
+ background:url("../img/DSC05830.jpg"); 
+ background-size:cover;
+}
+
+
+header.lodge-hero{
+  background:url("../img/bear-ridge-1.jpg"); 
+  background-size:cover;
+}
+
+
+header.levels-hero{
+  background:url("../img/DSC05772.jpg"); 
+  background-size:cover;
+}
+
+
+/*header tagline style*/
+
+/*animation*/
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.bottom-right h1,
+.bottom-right h2{
+animation: 2.5s ease-out 0s 1;
+animation-name: slideInLeft;
+}
+
+.bottom-right h1{
+  padding: 0em .2em 0em .5em;
+  letter-spacing: .1em;
+}
+
+
+.bottom-right h1:not(.home-tag h1){
+  margin-bottom: 10px;
+}
+
+
+.bottom-right h2{
+  padding: .2em .2em .2em .5em;
+  margin: 0 auto;
+  width: 100%;
+  font-size: 2em;
+}
+
+
+
+.bottom-right{
+  align-self: flex-end;
+  padding: 0;
+  line-height: .8;
+  color: #FFF;
+  word-spacing: .5em;
+  font-weight: 400;
+  width: 100%;
+}
+
+.bottom-right{
+  border-bottom: .3em solid #E8C517;
+}
+
+
+.bottom-right span{
+  font-weight: 900;
+  letter-spacing: .1em;
+}
+
+.home-tag h2{
+  background:#E8C517;
+}
+
+
+.home-tag h1{
+ line-height: .8;
+}
+
+.lodge-title h2{
+  font-size:1.8em;
+}
+
+.home-tag span{
+  color: #425D68;
+}
+
+.bottom-right {
+  text-shadow: 2px 2px #425D68;
+}
+
+.home-tag h2 span{
+  text-shadow: none;
+}
+
+
+
+
+
+/*--MENU & NAVIGATION---*/
+/* The side navigation menu */
+/* The side navigation menu */
+.mobile-logo{
+  height: 50px;
+  width: 200px;
+  max-width: 320px;
+  line-height: 0;
+  margin: 6px 10px 0 20px;
+}
+
+.banner{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.menu-icons{
+
+  max-width: 7%;
+  max-height: 7%;
+  margin-left: 35px;
+}
+
+.menu {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #CFD5D4; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  font-family: campaign-slab, serif;
+  }
+  
+  .menu ul{
+    padding: 20px 20px 20px 0;
+  }
+
+  .menu ul li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  
+  .menu a:link, .menu a:visited{
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 1.5em;
+  color: #425C68;
+  display: block;
+  transition: .5s;
+  }
+  
+  
+  .menu a:hover, .menu a:active {
+  color: #425C68;
+  font-weight: 800;
+  }
+  
+  
+  /* Position and style the close button (top right corner) */
+  .menu .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  }
+  
+  
+  .hamburger{
+  color: #707070;
+  text-shadow: .2px .4px #2D3340;
+  border:0;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  font-size: 1.8em;
+  }
+
+
+
+.fixed-wrap{
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background-color:rgb(255,255,255, .8);
+  border: 0px;
+  box-shadow: 0px 4px 5px 0px rgb(0 0 0 / 20%);
+-webkit-box-shadow: 0px 4px 5px 0px rgb(0 0 0 / 20%);
+-moz-box-shadow: 0px 4px 5px 0px rgb(0 0 0 / 20%);
+  z-index: 1;
+}
+
+
+/*--RIVER LEVELS---*/
+
+.charts:nth-child(odd) {
+  border: 2px #732222 solid;
+  padding-right: .5em;
+  width:100%;
+}
+
+
+.charts:nth-child(even) {
+  border: 2px #3591AF solid;
+  padding-right: .5em;
+  width:100%;
+}
+
+
+.charts {
+  position: relative;
+  margin: 40px auto;
+  height: 50vh;
+}
+
+
+
+
+/*--river levels table--*/
+
+.river-levels-chart{
+  width: 100%;
+  max-width: 1220px;
+  border: 2px solid #000;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.river-level-info{
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.184 20c.357-.13.72-.264 1.088-.402l1.768-.661C33.64 15.347 39.647 14 50 14c10.271 0 15.362 1.222 24.629 4.928.955.383 1.869.74 2.75 1.072h6.225c-2.51-.73-5.139-1.691-8.233-2.928C65.888 13.278 60.562 12 50 12c-10.626 0-16.855 1.397-26.66 5.063l-1.767.662c-2.475.923-4.66 1.674-6.724 2.275h6.335zm0-20C13.258 2.892 8.077 4 0 4V2c5.744 0 9.951-.574 14.85-2h6.334zM77.38 0C85.239 2.966 90.502 4 100 4V2c-6.842 0-11.386-.542-16.396-2h-6.225zM0 14c8.44 0 13.718-1.21 22.272-4.402l1.768-.661C33.64 5.347 39.647 4 50 4c10.271 0 15.362 1.222 24.629 4.928C84.112 12.722 89.438 14 100 14v-2c-10.271 0-15.362-1.222-24.629-4.928C65.888 3.278 60.562 2 50 2 39.374 2 33.145 3.397 23.34 7.063l-1.767.662C13.223 10.84 8.163 12 0 12v2z' fill='%235a585d' fill-opacity='0.07' fill-rule='evenodd'/%3E%3C/svg%3E");
+  margin: 0;
+  padding: 0;
+}
+
+.river-container p{
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.river-container{
+  background: #FFF;
+}
+
+
+
+.river-container .post-header{
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.184 20c.357-.13.72-.264 1.088-.402l1.768-.661C33.64 15.347 39.647 14 50 14c10.271 0 15.362 1.222 24.629 4.928.955.383 1.869.74 2.75 1.072h6.225c-2.51-.73-5.139-1.691-8.233-2.928C65.888 13.278 60.562 12 50 12c-10.626 0-16.855 1.397-26.66 5.063l-1.767.662c-2.475.923-4.66 1.674-6.724 2.275h6.335zm0-20C13.258 2.892 8.077 4 0 4V2c5.744 0 9.951-.574 14.85-2h6.334zM77.38 0C85.239 2.966 90.502 4 100 4V2c-6.842 0-11.386-.542-16.396-2h-6.225zM0 14c8.44 0 13.718-1.21 22.272-4.402l1.768-.661C33.64 5.347 39.647 4 50 4c10.271 0 15.362 1.222 24.629 4.928C84.112 12.722 89.438 14 100 14v-2c-10.271 0-15.362-1.222-24.629-4.928C65.888 3.278 60.562 2 50 2 39.374 2 33.145 3.397 23.34 7.063l-1.767.662C13.223 10.84 8.163 12 0 12v2z' fill='%235a585d' fill-opacity='0.07' fill-rule='evenodd'/%3E%3C/svg%3E");
+  margin: 0;
+}
+
+
+
+.river-levels-chart tr:nth-child(even){
+  background: #e8c5177a;
+}
+
+
+.river-levels-chart th{
+  background: #3591AF;
+  color: #FFF;
+  padding: 8px;
+  font-family: campaign-slab, serif;
+  font-weight: 500;
+  text-align: left;
+}
+
+
+.river-levels-chart td{
+  border: 1px solid #ffff;
+  padding: 4px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+
+.river-levels-chart td:nth-child(3n+1),
+.river-levels-chart th:last-child{
+  text-align: left;
+  padding-left: 26px;
+}
+
+
+.river-levels-chart tr:last-child{
+  background: #BF382C;
+  color: #FFF;
+}
+
+aside.river-level-table{
+  background-color: #FFF;
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.184 20c.357-.13.72-.264 1.088-.402l1.768-.661C33.64 15.347 39.647 14 50 14c10.271 0 15.362 1.222 24.629 4.928.955.383 1.869.74 2.75 1.072h6.225c-2.51-.73-5.139-1.691-8.233-2.928C65.888 13.278 60.562 12 50 12c-10.626 0-16.855 1.397-26.66 5.063l-1.767.662c-2.475.923-4.66 1.674-6.724 2.275h6.335zm0-20C13.258 2.892 8.077 4 0 4V2c5.744 0 9.951-.574 14.85-2h6.334zM77.38 0C85.239 2.966 90.502 4 100 4V2c-6.842 0-11.386-.542-16.396-2h-6.225zM0 14c8.44 0 13.718-1.21 22.272-4.402l1.768-.661C33.64 5.347 39.647 4 50 4c10.271 0 15.362 1.222 24.629 4.928C84.112 12.722 89.438 14 100 14v-2c-10.271 0-15.362-1.222-24.629-4.928C65.888 3.278 60.562 2 50 2 39.374 2 33.145 3.397 23.34 7.063l-1.767.662C13.223 10.84 8.163 12 0 12v2z' fill='%235a585d' fill-opacity='0.07' fill-rule='evenodd'/%3E%3C/svg%3E");
+  padding: 0em 0 1.5em 0;
+  margin-top: 20px;
+}
+
+
+
+
+/*---PLAN YOUR EXPERIENCE PAGE---*/
+
+/*--carousel elements---*/
+
+.carousel-container{
+  background-color: #2C7366;
+  width: 70vw;
+}
+
+.carousel {
+  margin:40px auto;
+  width: 100%;
+  height: auto;
+}
+
+
+.carousel-container img{
+    margin: auto;
+    border: 1px solid  rgba(6, 15, 94, 0.253);
+}
+
+
+
+
+/* Customize Previous/Next/Dots/Autoplay */
+
+.slick-autoplay-toggle-button,
+.slick-prev .slick-prev-icon, .slick-next .slick-next-icon,
+.slick-dots li button .slick-dot-icon,
+.slick-dots li.slick-active button .slick-dot-icon {
+  color: #E8C517;
+}
+
+
+.slick-prev {
+    left: -30px;
+}
+
+.slick-pause-icon{
+  display:none;
+}
+
+
+/* Customize Previous/Next/Dots/Autoplay - Active State */
+
+.slick-next:focus .slick-next-icon,
+.slick-next:focus .slick-prev-icon,
+.slick-prev:focus .slick-next-icon,
+.slick-prev:focus .slick-prev-icon,
+.slick-dots li button:focus .slick-dot-icon:before,
+.slick-dots li.slick-active button:focus .slick-dot-icon,
+.slick-autoplay-toggle-button:focus 
+{
+    color: #E8C517;
+}
+
+
+/* Drop Down Buttons */
+
+
+.wrap{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.dropdown{
+  margin-right: 10px;
+}
+
+.read-more-state {
+  display: none;
+}
+
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: .25s ease;
+}
+
+#experience p{
+  margin: 20px 0 20px 0;
+}
+
+
+#experience .read-more-target{
+  color:#FFF;
+}
+
+#experience a:link:not(aside a), 
+#experience a:visited:not(aside a){
+  color:#E8C517;
+}
+
+
+#experience a:hover, #experience a:active{
+  text-decoration: underline;
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: 1em;
+  max-height: 999em;
+}
+
+
+#post-2 ~ .read-more-trigger:before {
+  content: 'More Amenities';
+  text-decoration: underline;
+  color: #E8C517;
+}
+
+#post-2:checked ~ .read-more-trigger:before {
+  content: 'Show less';
+}
+
+
+#post-3 ~ .read-more-trigger:before {
+  content: 'More Activities';
+  text-decoration: underline;
+  color: #E8C517 ;
+}
+
+#post-3:checked ~ .read-more-trigger:before {
+  content: 'Show less';
+}
+
+
+#post-1 ~ .read-more-trigger:before {
+  content: 'Canoe Trip Options';
+  text-decoration: underline;
+  color: #E8C517 ;
+}
+
+#post-1:checked ~ .read-more-trigger:before {
+  content: 'Show less';
+}
+
+.read-more-trigger {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 .5em;
+  color: #000;
+  font-size: .9em;
+  line-height: 2;
+  border: 1px solid #ddd;
+  border-radius: .25em;
+}
+
+th:not(.canoe-price th) {
+  text-align: right;
+  padding-right: 10px;
+}
+
+.canoe-price th{
+  text-align: left;
+}
+
+td {
+  padding-right: 10px;
+}
+
+td:first-child:not(.canoe-price td){
+  text-align: right;
+}
+
+table, th, td {
+  border:1px solid black;
+}
+
+.canoe-table{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  color: #F2F2F2;
+}
+
+
+.canoe-table table:first-child{
+  margin-bottom: 20px;
+}
+
+
+/*--ALL ONLINE FORMS--*/
+.articles .contact-background,
+.articles .lodge-background{
+  width: 100%;
+}
+
+
+
+.contact-us-form,
+.form{
+  width: 100%;
+}
+
+
+.contact-hero h1, 
+.contact-hero h2{
+  display: none;
+}
+
+
+#wufoo-zbcnv4r05gcfht{
+  padding: 1em;
+  margin-top: 60px;
+  width: 100%;
+  background-color:rgb(255,255,255, .4);
+}
+
+#wufoo-msye1ij0k06pmc,
+#wufoo-wrbqika10iahwu{
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 10px;
+  background-color:rgb(255,255,255, .7);
+}
+
+
+header.contact-us-page{
+  background:#FFF;
+  max-height: 0;
+  display: flex;
+  justify-content: center;
+}
+
+
+#contact-background{
+  background: url("../img/DSC02228.jpg") no-repeat center center fixed; 
+  background-size: cover;
+  width: 100%;
+}
+
+
+#lodge-background{
+  background: url("../img/DSC03156.jpg") no-repeat center center fixed; 
+  background-size: cover;
+  width: 100%;
+}
+
+
+
+/*--ADDITIONAL ELEMENTS---*/
+
+aside:not(.river-level-table){
+  font-size:1.2em;
+  font-family: campaign-slab, serif;
+  margin: 20px auto;
+  background: #E8C517;
+  text-align: center;
+  width: 100%;
+  padding: 1em;
+}
+
+
+#about-us aside{
+word-spacing: .3em;
+}
+
+
+aside a{
+  color: #2C7366;
+}
+
+#canoe-rental a:link, #canoe-rental a:visited{
+  color: #BF382C;
+  font-weight: 700;
+}
+
+#canoe-rental a:hover, #canoe-rental a:active{
+  text-decoration:underline;
+}
+
+.river-level-table h2{
+  text-align: center;
+  width: 100%;
+  background: #FFF;
+}
+
+
+#about-us aside,
+#about-us .image{
+  margin: 0;
+  padding: 0;
+}
+
+
+#about-us .image{
+  padding: 0;
+  line-height: 0;
+}
+
+
+.post header,
+.articles header,
+.river-container .post-header{
+  text-align: center;
+}
+
+
+.lodge .button{
+  background: #425D68;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+.lodge .button a{
+  color: #E8C517;
+}
+
+
+.lodge img{
+  display:none;
+}
+
+
+.your-plan{
+ position: fixed;
+ bottom: 0;
+ width: 100%;
+ height: 60px;
+ background-color:rgb(255,255,255, .7);
+ border: 0px;
+ box-shadow: 0px 4px 5px 0px rgb(0 0 0 / 20%);
+ -webkit-box-shadow: 0px 4px 5px 0px rgb(0 0 0 / 20%);
+ -moz-box-shadow: 0px 4px 5px 0px rgb(0 0 0 / 20%);
+ text-align: center;
+ font-family: spade, sans-serif;
+}
+
+
+.button a{
+margin: 15px auto;
+color: #BF382C;
+font-size: 1.3em;
+}
+
+
+.button-container{
+display: flex;
+justify-content: center;  
+}
+
+
+#lodge-reservations{
+  background-color: #ffffff;
+background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.184 20c.357-.13.72-.264 1.088-.402l1.768-.661C33.64 15.347 39.647 14 50 14c10.271 0 15.362 1.222 24.629 4.928.955.383 1.869.74 2.75 1.072h6.225c-2.51-.73-5.139-1.691-8.233-2.928C65.888 13.278 60.562 12 50 12c-10.626 0-16.855 1.397-26.66 5.063l-1.767.662c-2.475.923-4.66 1.674-6.724 2.275h6.335zm0-20C13.258 2.892 8.077 4 0 4V2c5.744 0 9.951-.574 14.85-2h6.334zM77.38 0C85.239 2.966 90.502 4 100 4V2c-6.842 0-11.386-.542-16.396-2h-6.225zM0 14c8.44 0 13.718-1.21 22.272-4.402l1.768-.661C33.64 5.347 39.647 4 50 4c10.271 0 15.362 1.222 24.629 4.928C84.112 12.722 89.438 14 100 14v-2c-10.271 0-15.362-1.222-24.629-4.928C65.888 3.278 60.562 2 50 2 39.374 2 33.145 3.397 23.34 7.063l-1.767.662C13.223 10.84 8.163 12 0 12v2z' fill='%235a585d' fill-opacity='0.07' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+
+address{
+ margin-top: 20px;
+ text-align: center;
+ font-style: normal;
+}
+
+
+.footer-container{
+padding-top: 2em;
+margin:0;
+}
+
+
+.footer-container a:link, .footer-container a:visited{
+color: #FFF;
+text-decoration: underline;
+}
+
+
+.footer-container a:hover, .footer-container a:active{
+text-decoration: none;
+}
+
+
+.media-icons img{
+  width:7%;
+  height:auto;
+  margin: 20px;
+  background: white;
+  padding: .3em;
+  border-radius: 4px;
+}
+
+nav .media-icons img{
+  width: 10%;
+  background: none;
+  border: 3px solid #2C7366;
+}
+
+
+.media-icons{
+  display: flex;
+  justify-content: center;
+}
+
+.social-media-links{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.contact ul,
+.additional-info ul{
+padding: 0;
+margin: 0;
+text-align: center;
+}
+
+
+.additional-info li,
+.contact li{
+margin-bottom: 10px;
+}
+
+
+.brand h4, 
+.brand h5{
+font-family: campaign-slab, serif;
+margin:0;
+}
+
+
+.brand h4{
+font-size: 1.5em;
+}
+
+
+.footer-container h6{
+font-size: .75em;
+margin: 0 auto 35px auto;
+}
+
+.content p{
+  margin: 20px auto;
+}
+
+.directions,
+.lodge{
+  width: 100%;
+  color: #fff;
+  margin: 0;
+}
+
+
+.lodge{
+  margin-top: 60px;
+  padding: .5em;
+}
+
+.directions-container,
+.lodge-overview header,
+.lodge-overview{
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  padding: 0;
+}
+
+.directions-container header{
+  margin: 0;
+  padding: 1em;
+}
+
+.directions-container h2{
+  margin: 0;
+}
+
+
+.map{
+  line-height: 0;
+}
+
+
+.lodge-overview ul{
+  margin: auto;
+  font-size: 1.5em;
+  font-family: campaign-slab, serif;
+  font-weight: 500;
+  text-align: center;
+}
+
+.lodge-overview ul li{
+  margin-bottom: 10px;
+}
+
+
+#lodging,
+#canoeing,
+#activities{
+  background: #2C7366;
+  padding-bottom: 2em;
+}
+
+
+#lodging header,
+#canoeing header,
+#activities header{
+  background: #FFF;
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.184 20c.357-.13.72-.264 1.088-.402l1.768-.661C33.64 15.347 39.647 14 50 14c10.271 0 15.362 1.222 24.629 4.928.955.383 1.869.74 2.75 1.072h6.225c-2.51-.73-5.139-1.691-8.233-2.928C65.888 13.278 60.562 12 50 12c-10.626 0-16.855 1.397-26.66 5.063l-1.767.662c-2.475.923-4.66 1.674-6.724 2.275h6.335zm0-20C13.258 2.892 8.077 4 0 4V2c5.744 0 9.951-.574 14.85-2h6.334zM77.38 0C85.239 2.966 90.502 4 100 4V2c-6.842 0-11.386-.542-16.396-2h-6.225zM0 14c8.44 0 13.718-1.21 22.272-4.402l1.768-.661C33.64 5.347 39.647 4 50 4c10.271 0 15.362 1.222 24.629 4.928C84.112 12.722 89.438 14 100 14v-2c-10.271 0-15.362-1.222-24.629-4.928C65.888 3.278 60.562 2 50 2 39.374 2 33.145 3.397 23.34 7.063l-1.767.662C13.223 10.84 8.163 12 0 12v2z' fill='%235a585d' fill-opacity='0.02' fill-rule='evenodd'/%3E%3C/svg%3E");
+  width: 100%;
+}
+
+.about-us p{
+  background: #FFF;
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.184 20c.357-.13.72-.264 1.088-.402l1.768-.661C33.64 15.347 39.647 14 50 14c10.271 0 15.362 1.222 24.629 4.928.955.383 1.869.74 2.75 1.072h6.225c-2.51-.73-5.139-1.691-8.233-2.928C65.888 13.278 60.562 12 50 12c-10.626 0-16.855 1.397-26.66 5.063l-1.767.662c-2.475.923-4.66 1.674-6.724 2.275h6.335zm0-20C13.258 2.892 8.077 4 0 4V2c5.744 0 9.951-.574 14.85-2h6.334zM77.38 0C85.239 2.966 90.502 4 100 4V2c-6.842 0-11.386-.542-16.396-2h-6.225zM0 14c8.44 0 13.718-1.21 22.272-4.402l1.768-.661C33.64 5.347 39.647 4 50 4c10.271 0 15.362 1.222 24.629 4.928C84.112 12.722 89.438 14 100 14v-2c-10.271 0-15.362-1.222-24.629-4.928C65.888 3.278 60.562 2 50 2 39.374 2 33.145 3.397 23.34 7.063l-1.767.662C13.223 10.84 8.163 12 0 12v2z' fill='%235a585d' fill-opacity='0.02' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+
+
+
+
+#experience .post p{
+  color: #FFF;
+}
+
+
+#activities ul li:nth-of-type(odd) {
+  list-style-type: "→";
+}
+
+#activities ul li{
+  padding-left: .5em;
+}
+
+#lodging .info ul li::before {
+  content: "\2022";
+  color: #E8C517;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+
+
+#about-us .info header{
+  border-bottom: 1px solid #000;
+}
+
+
+/*--MEDIA QUERIES FOR SCREEN SIZES---*/
+
+@media screen and (min-width: 667px){
+    /* Styles for Tablets */
+  body{
+    font-size: 1.5em;
+  }
+
+   
+  .menu a:link, .menu a:visited{
+    font-size: 1.3em; 
+  }
+    
+
+  .menu ul li{
+    margin-bottom: 30px;
+  }
+
+
+  .hamburger{
+    font-size: 1.3em;
+  }
+
+
+
+  nav .media-icons img{
+    width: 13%;
+  }
+
+
+  header.primary{
+    height: 80vh;
+  }
+
+  .articles .post:not(
+  #canoeing,
+  #lodging,
+  #activities,
+  .about
+  ),
+.articles header,
+.hamburger,
+footer div,
+.chart-container,
+aside .table-wrap
+.content {
+  margin: auto 20px;
+}
+
+.content p,
+.info p{
+  margin: 10px 20px 40px 20px;
+}
+
+  
+  .carousel-container{
+      width: auto;
+    }
+
+
+    .carousel{
+      width: 100vw;
+      max-width: 90%;
+  }
+
+
+  .your-plan{
+    display: none;
+  }
+
+
+  .lodge-title h2{
+    font-size: 2em;
+  }
+  
+  .media-icons img{
+    width: 5%;
+  }
+  
+}
+
+
+@media screen and (min-width: 800px){
+
+
+header.plan-hero,
+header.home-hero,
+header.canoe-hero,
+header.lodge-hero,
+header.levels-hero{
+       /* Create the parallax scrolling effect */
+ background-attachment: fixed;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size:cover;
+ height: 85vh;
+ }
+
+ 
+#wufoo-wrbqika10iahwu{
+  max-width: 900px;
+}
+
+.home-tag h1{
+  margin-bottom: 10px;
+}
+
+}
+
+
+
+
+@media screen and (min-width: 1200px) {
+    /* Styles for Desktops */
+
+  #home-icon{
+    display: none;
+  }
+  
+ .fixed-wrap{
+   height:65px;
+ }
+    .hamburger,
+    .mobile-logo{
+      display: none;
+    }
+    
+.menu-icons{
+  display: none;
+}
+    .menu {
+    height: 60px; /* 100% Full-height */
+    width: 100%; /* 0 width - change this with JavaScript */ 
+    background: none; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    overflow-y: hidden;
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    font-family: campaign-slab, serif;
+    }
+    
+
+    .menu .closebtn{
+      display: none !important;
+    }
+    
+    
+    .menu ul{
+      display:flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    
+    .menu ul li{
+      margin: 0;
+      padding: 0;
+      align-self: center;
+    }
+    
+    
+   
+    
+    
+    .menu li a:link:not(.bralogo){
+     font-size: 1rem;
+     padding: 0;
+     margin: 0 20px;
+    } 
+    
+
+    .bralogo{
+      height: auto;
+        width: auto;
+        max-height: 60px;
+        max-width: 300px;
+        line-height: 30px;
+        vertical-align: middle;
+        padding: 0;
+    }
+    
+    a.bralogo{
+      padding: 5px !important;
+    }
+    
+    .contact ul{
+      text-align: right;
+    }
+
+
+    .additional-info ul{
+      text-align: left;
+    }
+
+
+    .menu a:link, .menu a:visited{
+      font-size: 1.5em;
+    }
+      
+  
+    .read-more-state:checked ~ .read-more-wrap .read-more-target {
+      opacity: 1;
+      font-size: .75em;
+      max-height: 999em;
+    }
+    
+.bottom-right h1,
+.bottom-right h2{
+  padding: .2em .2em .2em 1em;
+}
+    
+
+
+    .articles .post:not(
+      #canoeing,
+      #lodging,
+      #activities,
+      .about
+      ),
+    .info p,
+    .articles header,
+    .hamburger,
+    footer div,
+    .chart-container,
+    aside .table-wrap,
+    .content {
+      margin: auto 40px;
+    }
+
+  
+    .wrap{
+    margin: 20px 0;
+  }
+  
+   
+    #lodging,
+    #canoeing,
+    #activities{
+      padding-bottom: 0;
+    }
+
+    #lodging header,
+    #canoeing header,
+    #activities header{
+      background: #FFF;
+      background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.184 20c.357-.13.72-.264 1.088-.402l1.768-.661C33.64 15.347 39.647 14 50 14c10.271 0 15.362 1.222 24.629 4.928.955.383 1.869.74 2.75 1.072h6.225c-2.51-.73-5.139-1.691-8.233-2.928C65.888 13.278 60.562 12 50 12c-10.626 0-16.855 1.397-26.66 5.063l-1.767.662c-2.475.923-4.66 1.674-6.724 2.275h6.335zm0-20C13.258 2.892 8.077 4 0 4V2c5.744 0 9.951-.574 14.85-2h6.334zM77.38 0C85.239 2.966 90.502 4 100 4V2c-6.842 0-11.386-.542-16.396-2h-6.225zM0 14c8.44 0 13.718-1.21 22.272-4.402l1.768-.661C33.64 5.347 39.647 4 50 4c10.271 0 15.362 1.222 24.629 4.928C84.112 12.722 89.438 14 100 14v-2c-10.271 0-15.362-1.222-24.629-4.928C65.888 3.278 60.562 2 50 2 39.374 2 33.145 3.397 23.34 7.063l-1.767.662C13.223 10.84 8.163 12 0 12v2z' fill='%235a585d' fill-opacity='0.02' fill-rule='evenodd'/%3E%3C/svg%3E");
+      margin: 0;
+    }
+
+
+    .charts {
+      height: 400px;
+      width: 400px;
+  }
+
+
+  
+    .chart-container{
+        display: grid;
+        grid-template-columns: repeat(2, 500px);
+        gap: 10px;
+        margin: 100px auto;
+    }
+  
+  
+  .post header{
+    grid-area: post-header;
+    text-align: center;
+  }
+  
+     
+  .carousel-container, 
+  .image,
+  .directions-container{
+    grid-area: carousel;
+  }
+  
+
+  
+  .info{
+    grid-area: info;
+    padding: 1.5em;
+    margin: 0;
+    height: 100%;
+  }
+
+
+  .info:not(.directions, .directions-container, .lodge){
+    color:#FFF;
+    background: #3591AF;
+  }
+
+  
+  .info:not(.about-us, .lodge){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+
+  #about-us .info{
+    font-size: .8em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #about-us .info header{
+    border-bottom: 1px solid #FFF;
+    font-size: 1.1em;
+  }
+
+  #about-us .info p{
+    margin-top: 0px;
+  }
+
+  #about-us .info header{
+    margin-top: 0;
+  }
+  
+
+  .about-us p{
+    background: none;
+  }
+  
+ 
+  
+  .post:not(.lodging){
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-areas:
+      "post-header post-header"
+      "info carousel";
+  }
+
+
+  .articles .contact-background,
+  .articles .lodge-background{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-areas:
+      "post-header post-header"
+      "info carousel";
+    width: 95%;
+    align-items: start;
+    grid-gap: 0px 35px;
+}
+
+
+ .directions-container,
+ .lodge-overview{
+  color: #000;
+}
+
+
+.directions{
+  display: block;
+  padding: 0;
+}
+
+
+
+.directions-container{
+  background-color:rgb(255,255,255, .4);
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 35px;
+}
+
+#directions-map{
+  width:100%;
+  margin: 90px 0 40px 0;
+  padding: 0;
+}
+
+.lodge-overview{
+  width: 100%;
+  margin-top: 90px;
+}
+
+
+.lodge-overview h1{
+  margin-top: 0;
+  padding: 0;
+}
+
+
+
+article .lodge{
+  padding: 0;
+}
+
+#wufoo-zbcnv4r05gcfht{
+  margin: 90px 0 40px 0;
+  border-radius: 4px;
+}
+
+
+
+.contact-us-form{
+  border-radius: 4px;
+}
+
+
+  aside{
+    margin: 0;
+  }
+  
+
+  .brand{
+    grid-area: brand;
+  }
+
+  .location{
+    grid-area: location;
+  }
+
+
+  .contact{
+    grid-area: contact;
+  }
+
+
+  .additional-info{
+    grid-area: info;
+  }
+
+
+  .social-media-links{
+    grid-area: media;
+  }
+
+  .media-icons img{
+    width: 4%;
+  }
+
+  .footer-container{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-areas:
+    "brand brand brand"
+    "info location contact"
+    "media media media";
+    text-align: center;
+    grid-row-gap: 30px;
+  }
+
+  
+  
+  }
+
+  @media screen and (min-width: 1305px){
+    
+    #about-us .info header{
+      font-size: 1.5em;
+    }
+
+
+  }
