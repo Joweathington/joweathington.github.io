@@ -1,0 +1,138 @@
+/*---------------Box Sizing----------------- */
+
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  
+  /* ---------------Utility Styles----------------- */
+  
+  .container,
+  table,
+  header{
+    margin: auto;
+    max-width: 1000px;
+  }
+  
+  
+  
+  /* ---------------Global Styles----------------- */
+  
+  body{
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    background: url("../img/mars-rover-full-width.webp") 
+    no-repeat center center fixed; 
+    background-size: cover;
+  }
+  
+  
+  .container{
+    background: rgb(255,255,255, .2);
+    border-radius: 30px;
+  }
+  
+  
+  header{
+    text-align: center;
+    margin-top: 60px;
+  }
+  
+  header h2{
+    padding-top: 70px;
+  }
+  
+  h2{
+    font-size: 2.5em;
+    font-weight: 400;
+  }
+  
+  
+  .formcontainer {
+      padding: 5px;
+      text-align: center;
+  }
+  
+  
+  
+  .formlabel {
+      display: inline-block;
+      padding: 10px;
+      background: rgb(255,255,255, .5);
+      border-radius: 10px;
+      font-weight: 400;
+  }
+  
+  
+  label[for="curiosity"],
+  label[for="opportunity"],
+  label[for="spirit"]{
+    background: rgb(255,255,255, .5);
+    border-radius: 10px;
+    margin: 5px;
+    padding: 10px 13px 10px 10px;
+    font-weight: 400;
+  }
+  
+  
+  input[type="date"]{
+    height: 38px;
+  }
+  
+  
+  #found,
+  #fulldisplay{
+    color: white;
+    font-weight: 400;
+    text-shadow: 1px 1px #000;
+    font-size: 1.5em;
+  }
+  
+  
+  .error {
+      color: red;
+      padding-left: 5px;
+  }
+  
+  table {
+      border-collapse: collapse;
+      background: rgb(255,255,255, .4);
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid black;
+  }
+  
+  td{
+    font-weight: 400;
+  }
+  
+  
+  .img-container {
+    float: left;
+    width: 40%;
+    padding: 20px;
+  }
+  
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  
+  #rovers img[src="#"]{
+    display: none;
+  }
+  
+  
+  #rovers {
+    padding-bottom: 40px;
+  }

@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Polygon - Company Details">
+    <meta name="keywords" content="HTML, CSS,JavaScript, AJAX, jQuery">
+    <meta name="author" content="Bruce Bauer">
+    <title>Polygon - Company Details</title>
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+  <header>
+    <h2>Mars Rover Photo Explorer</h2>
+  </header>
+    <table>
+        <thead>
+          <tr>
+            <th scope="col">Rover</th>
+            <th scope="col">Mission Start</th>
+            <th scope="col">Mission End</th>
+          </tr>
+        </thead>
+        <tr>
+          <td>Curiosity</td>
+          <td>08/06/2012</td>
+          <td>09/28/2019</td>
+        </tr>
+        <tr>
+          <td>Opportunity</td>
+          <td>01/26/2004</td>
+          <td>06/11/2018</td>
+        </tr>
+        <tr>
+          <td>Spirit</td>
+          <td>01/05/2004</td>
+          <td>03/21/2004</td>
+        </tr>
+        </table>
+    <form id="myform">
+        <div class="formcontainer">
+          <div class="wrap">
+            <h2>Select a rover and a picture date</h2>
+
+                <label class="formlabel">Rover: </label>
+                <label for="curiosity" onchange="getCuriosity()">
+                    <input type="radio" name="rover" id="curiosity" value = "curiosity"
+                        data-rule-required="true" data-msg-required="A Rover is Required" />Curiosity
+                </label>
+                <label for="opportunity" onchange="getOpportunity()">
+                    <input type="radio" name="rover" id="opportunity" value = "opportunity">Opportunity
+                </label>
+                <label for="spirit" onchange="getSpirit()">
+                    <input type="radio" name="rover" id="spirit" value = "spirit">Spirit
+                </label>
+            <label for="rover" class="error" id="RoverError"></label>
+            <br><br>
+            
+            <label class="formlabel">Picture Date:</label>
+            <input type="date" name="PicDate" id="PicDate" 
+                data-rule-required="true" data-msg-required="Date is Required" />
+            <label id="DateError" for="PicDate" class="error"></label>
+            <br><br>
+            <input type="button" value="search" id="search" name="search" onclick="GetPics();">
+            <input type="button" value="Clear" id="Clear" name="Clear" onclick="ClearForm();">
+            <br>
+          </div><!--.wrap-->
+
+            <p id="found"></p>
+            <hr>
+            <br>
+            <p id="fulldisplay"></p>
+            <div id="rovers">
+              <a id="display0" href="#">
+                <img id="image0" src="#" height="100" width="100" alt="rover"></a>
+              <a id="display1" href="#">
+                <img id="image1" src="#" height="100" width="100" alt="rover"></a>
+              <a id="display2" href="#">
+                <img id="image2" src="#" height="100" width="100" alt="rover"></a>
+              <a id="display3" href="#">
+                <img id="image3" src="#" height="100" width="100" alt="rover"></a>
+              <a id="display4" href="#">
+                <img id="image4" src="#" height="100" width="100" alt="rover"></a>
+              <a id="display5" href="#">
+                <img id="image5" src="#" height="100" width="100" alt="rover"></a>
+              <a id="display6" href="#">
+                <img id="image6" src="#" height="100" width="100" alt="rover"></a>
+              <a id="display7" href="#">
+                <img id="image7" src="#" height="100" width="100" alt="rover"></a>
+              <a id="display8" href="#">
+                <img id="image8" src="#" height="100" width="100" alt="rover"></a>
+              <a id="display9" href="#">
+                <img id="image9" src="#" height="100" width="100" alt="rover"></a>
+              <a id="display10" href="#">
+                <img id="image10" src="#" height="100" width="100" alt="rover"></a>
+              <a id="display11" href="#">
+                <img id="image11" src="#" height="100" width="100" alt="rover"></a>
+              <a id="display12" href="#">
+                <img id="image12" src="#" height="100" width="100" alt="rover"></a>
+              <a id="display13" href="#">
+                <img id="image13" src="#" height="100" width="100" alt="rover"></a>
+              <a id="display14" href="#">
+                <img id="image14" src="#" height="100" width="100" alt="rover"></a>
+              <a id="display15" href="#">
+                <img id="image15" src="#" height="100" width="100" alt="rover"></a>
+              <a id="display16" href="#">
+                <img id="image16" src="#" height="100" width="100" alt="rover"></a>
+              <a id="display17" href="#">
+                <img id="image17" src="#" height="100" width="100" alt="rover"></a>
+              <a id="display18" href="#">
+                <img id="image18" src="#" height="100" width="100" alt="rover"></a>
+              <a id="display19" href="#">
+                <img id="image19" src="#" height="100" width="100" alt="rover"></a>
+              <a id="display20" href="#">
+                <img id="image20" src="#" height="100" width="100" alt="rover"></a>
+              <a id="display21" href="#">
+                <img id="image21" src="#" height="100" width="100" alt="rover"></a>
+              <a id="display22" href="#">
+                <img id="image22" src="#" height="100" width="100" alt="rover"></a>
+              <a id="display23" href="#">
+                <img id="image23" src="#" height="100" width="100" alt="rover"></a>
+              <a id="display24" href="#">
+                <img id="image24" src="#" height="100" width="100" alt="rover"></a>
+          </div><!--#rovers-->
+        </div><!--.formcontainer-->
+      </div><!--.container-->
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>
