@@ -81,9 +81,9 @@ header nav li a:visited{
 }
 
 article a:link,
-.intro a:link,
+.intro section a:link,
 article a:visited,
-.intro a:visited{
+.intro section a:visited{
   color: #d11406;
   font-weight: 700;
 }
@@ -154,11 +154,6 @@ q{
   font-size: 1rem;
 }
 
-
-footer li{
-  font-family: ;
-  letter-spacing: 0.125rem;
-}
 
 .fade-in-image { animation: fadeIn 4s; }
 
