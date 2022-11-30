@@ -284,6 +284,11 @@ svg:hover{
   font-size: 4.5rem;
 }
 
+.flowering{
+  padding: 0;
+  height: auto;
+}
+
 
 .waves{
   height: 28px;
