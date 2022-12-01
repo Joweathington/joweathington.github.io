@@ -16,20 +16,14 @@ img{
 }
 
 
-.google-slides-container{
-  position: relative;
-  width: 100%;
-  padding-top: 60%;
-  overflow: hidden;
+
+video {
+  max-width: 100%;
+  height: auto;
 }
 
-.google-slides-container iframe{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
+
+
 
 .screen-reader-only {
   position: absolute;
@@ -38,6 +32,9 @@ img{
   overflow: hidden;
   white-space: nowrap;
 }
+
+
+
 /*=== GLOBAL ===*/
 
 body{
@@ -114,6 +111,8 @@ footer li a:active{
   margin: 40px auto;
 }
 
+
+
 .feature{
   padding-top: 3.3rem;
 }
@@ -132,10 +131,12 @@ q{
 }
 
 
+
 .jaw-brand{
   width: 70px;
   height: auto;
 }
+
 
 
 .footer {
@@ -146,13 +147,20 @@ q{
   line-height: 60px; /* Vertically center the text there */
 }
 
+
+
 .footer .my-4{
   margin-bottom: 0 !important;
 }
 
+
+
 .footer .py-3{
   padding-top: 0 !important;
 }
+
+
+
 /*===ADDITIONAL===*/
 .database img,
 .programming img,
@@ -162,14 +170,17 @@ q{
 }
 
 
+
 .wrap{
   padding-top: 3.33rem;
 }
 
 
+
 .credits{
   font-size: 1rem;
 }
+
 
 
 .fade-in-image { 
@@ -179,6 +190,7 @@ q{
   -o-animation: fadeIn 5s;
   -ms-animation: fadeIn 5s;
 }
+
 
 
 @keyframes fadeIn {
@@ -279,6 +291,25 @@ svg:hover{
 
 
 /*===RELECTION PAGE===*/
+
+
+.google-slides-container{
+  position: relative;
+  width: 100%;
+  padding-top: 60%;
+  overflow: hidden;
+}
+
+
+
+.google-slides-container iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 
 
 .msg{
