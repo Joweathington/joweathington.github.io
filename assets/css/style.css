@@ -360,7 +360,7 @@ svg:hover{
 /*==Media Queries*/
 
 @media (min-width: 400px) {
-  /*===Scroll-Trigger===*/
+  /*===Scroll-Trigger after 400px because transition won't work on iPhone SE & iPhone 12pro===*/
 
 .box{
   -webkit-transition: opacity 3s;
