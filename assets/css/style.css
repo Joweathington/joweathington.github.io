@@ -210,6 +210,12 @@ q{
 }
 
 
+
+@-webkit-keyframes {
+  
+}
+
+
 .box{
   -webkit-transition: opacity 3s;
   -moz-transition: opacity 3s;
@@ -221,11 +227,13 @@ q{
 
 .box{
   opacity: 0;
+  -webkit-transition: opacity 0;
 }
 
 
 .box.active{
   opacity: 1;
+  -webkit-transition: opacity 1;
 }
 
 
