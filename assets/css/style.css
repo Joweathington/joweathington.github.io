@@ -183,6 +183,14 @@ q{
 
 
 
+.munch .col-md-8 p,
+.campus-safety .col-md-8 p{
+font-size: 3rem;
+text-align: center;
+}
+
+
+/*===Feature Fades===*/
 .fade-in-image { 
   -webkit-animation: fadeIn 5s;
   -moz-animation: fadeIn 5s;
@@ -210,11 +218,7 @@ q{
 }
 
 
-
-@-webkit-keyframes {
-  
-}
-
+/*===Scroll-Trigger===*/
 
 .box{
   -webkit-transition: opacity 3s;
@@ -242,12 +246,6 @@ q{
 }
 
 
-
-.munch .col-md-8 p,
-.campus-safety .col-md-8 p{
-font-size: 3rem;
-text-align: center;
-}
 
 
 /*===INTRO PAGE===*/
