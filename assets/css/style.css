@@ -200,7 +200,7 @@ q{
 
 
 
-.box{
+@supports (.box){
   -webkit-transition: opacity 3s;
   -moz-transition: opacity 3s;
   -o-transition: opacity 3s;
@@ -358,3 +358,4 @@ svg:hover{
   width: 100%;
   height: 100%;
 }
+
