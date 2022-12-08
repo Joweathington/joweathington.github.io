@@ -30,7 +30,7 @@ function addObserver(el, options){
   observer.observe(el)
 }
 // Example usages:
-scrollTrigger('.intro-text')
+scrollTrigger('.fadeIn')
 
 scrollTrigger('.scroll-reveal', {
   rootMargin: '-200px',
