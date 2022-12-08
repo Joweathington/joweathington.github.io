@@ -192,6 +192,17 @@ q{
 }
 
 
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+} 
+
 
 @keyframes fadeIn {
   0% { opacity: 0; }
@@ -199,8 +210,7 @@ q{
 }
 
 
-
-@supports (.box){
+.box{
   -webkit-transition: opacity 3s;
   -moz-transition: opacity 3s;
   -o-transition: opacity 3s;
@@ -358,4 +368,3 @@ svg:hover{
   width: 100%;
   height: 100%;
 }
-
