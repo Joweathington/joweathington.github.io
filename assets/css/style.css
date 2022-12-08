@@ -272,6 +272,22 @@ text-align: center;
 }
 
 
+#buffalo-svg,
+#safety-svg,
+#film-svg
+{
+  width: 70%;
+}
+
+
+#type-svg,
+#database-svg,
+#ud-svg
+{
+  width: 80%;
+}
+
+
 
 svg:hover{
   fill: #d11406;
@@ -383,4 +399,12 @@ svg:hover{
 }
 
 
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+  .projects svg{
+    padding: 0;
+    width: 100% !important;
+  }
+  
 }
