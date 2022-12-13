@@ -179,6 +179,7 @@ q{
 
 .credits{
   font-size: 1rem;
+  margin-top: 3rem;
 }
 
 
@@ -187,6 +188,13 @@ q{
 .campus-safety .col-md-8 p{
 font-size: 3rem;
 text-align: center;
+}
+
+
+.mobile{
+  display: block;
+  width: 70%;
+  margin: 0 auto;
 }
 
 
@@ -324,6 +332,10 @@ svg:hover{
 }
 
 
+.capstone dd{
+  padding-bottom: 1rem;
+}
+
 
 .msg{
   padding: 3.33rem 0;
@@ -342,7 +354,7 @@ svg:hover{
 
 
 .growth h2{
-  font-size: 4.5rem;
+  font-size: 4rem;
 }
 
 .flowering{
@@ -401,6 +413,7 @@ svg:hover{
 
 }
 
+
 @media (min-width: 768px) and (max-width: 991px){
   .projects svg{
     padding: 0;
@@ -408,3 +421,21 @@ svg:hover{
   }
   
 }
+
+
+
+@media (min-width: 960px){
+  .mobile{
+    display: block;
+    float: right;
+    padding: 0;
+    width: 60%;
+    margin: 0 auto;
+  }
+  
+  .growth h2{
+    font-size: 5rem;
+  }
+  
+}
+
