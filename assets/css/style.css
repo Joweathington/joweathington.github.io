@@ -62,6 +62,9 @@ h1:not(.intro h1){
   font-size: 1.8rem;
 } 
 
+.intro dl{
+  margin-block-start: 0 !important;
+}
 
 .author{
   padding-top: 0;
