@@ -49,7 +49,7 @@ a{
   text-decoration: none;
 }
 
-li{
+li:not(.exempt){
   list-style: none !important;
 }
 
