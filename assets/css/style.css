@@ -51,9 +51,6 @@ a{
 
 ul:not(.exempt){
   list-style: none;
-}
-
-ul{
   padding: 0;
 }
 
