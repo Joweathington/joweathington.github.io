@@ -201,6 +201,9 @@ q{
   margin: 1rem auto;
 }
 
+.selfie{
+    border: 10px solid blue;
+}
 
 /*===Feature Fades===*/
 .fade-in-image { 
