@@ -205,6 +205,10 @@ q{
     border: 10px solid #6c757d;
 }
 
+.poscom{
+  padding-top: none;
+}
+
 /*===Feature Fades===*/
 .fade-in-image { 
   -webkit-animation: fadeIn 5s;
