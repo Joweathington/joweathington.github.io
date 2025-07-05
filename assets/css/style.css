@@ -206,7 +206,7 @@ q{
 }
 
 .poscom{
-  padding-top: none;
+  padding-top: 0;
 }
 
 /*===Feature Fades===*/
