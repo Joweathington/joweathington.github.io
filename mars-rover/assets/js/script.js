@@ -9,7 +9,7 @@ function getOpportunity() {
 
 
 function getSpirit() {
-    document.getElementById("PicDate").value = "2004-01-03";
+    document.getElementById("PicDate").value = "2004-01-05";
 }
 
 
