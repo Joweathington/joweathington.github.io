@@ -43,7 +43,7 @@ async function GetPics() {
 
  
         /* URL for AJAX Call */
-        var myURL2 = "https://api.nasa.gov/mars-photos/api/v1/rovers/" + rover + "/photos?earth_date=" + PicDate + "&camera=fhaz&page=1&api_key=" + apiKey;
+        var myURL2 = "https://api.nasa.gov/mars-photos/api/v1/rovers/" + rover + "/photos?earth_date=" + PicDate + "&page=1&api_key=" + apiKey;
         /* Make the AJAX call */
         var msgObject = await fetch(myURL2);
         /* Check the status */
