@@ -49,7 +49,7 @@ a{
   text-decoration: none;
 }
 
-ul:not(.exempt, .selfie){
+ul:not(.exempt, .campaign-list){
   list-style: none;
   padding: 0;
 }
